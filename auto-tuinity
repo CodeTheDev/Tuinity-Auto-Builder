@@ -1,0 +1,53 @@
+#!/usr/bin/env bash
+
+echo "=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+="
+echo "Tuinity Auto-Builder Script v1.0"
+echo "Created By CodeError#0001"
+echo "This helps you build Tuinity without"
+echo "having to manually clone and run"
+echo "scripts. Enjoy building automatically! :)"
+echo "=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+="
+
+echo ""
+echo "=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+="
+echo "Cloning Tuinity 1.16 Repository..."
+echo "=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+="
+echo ""
+git clone --single-branch --branch ver/1.16 https://github.com/Spottedleaf/Tuinity.git
+cd Tuinity
+
+echo ""
+echo "=+=+=+=+=+=+=+=+=+=+=+=+=+="
+echo "Cloning Paper Repository..."
+echo "=+=+=+=+=+=+=+=+=+=+=+=+=+="
+echo ""
+git clone https://github.com/PaperMC/Paper.git
+cd Paper
+
+echo ""
+echo "=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+="
+echo "Building Paper (Dependency for Tuinity)..."
+echo "=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+="
+echo ""
+source paper jar
+cd ..
+
+echo ""
+echo "=+=+=+=+=+=+=+=+=+="
+echo "Building Tuinity..."
+echo "=+=+=+=+=+=+=+=+=+="
+echo ""
+source tuinity jar
+
+echo ""
+echo "=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+="
+echo "Copying final Tuinity jar to parent directory..."
+echo "=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+="
+echo ""
+cp tuinity-paperclip.jar ../tuinity.jar
+
+echo "=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+="
+echo "Tuinity has been successfully built automatically!"
+echo "The final jar can be found in the directory where"
+echo "you ran this script. Enjoy your new Tuinity server!"
+echo "=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+="
