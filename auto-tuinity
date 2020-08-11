@@ -10,10 +10,10 @@ echo "=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+="
 
 echo ""
 echo "=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+="
-echo "Cloning Tuinity 1.16 Repository..."
+echo "Cloning Tuinity Repository..."
 echo "=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+="
 echo ""
-git clone --single-branch --branch ver/1.16 https://github.com/Spottedleaf/Tuinity.git
+git clone https://github.com/Spottedleaf/Tuinity.git
 cd Tuinity
 
 echo ""
