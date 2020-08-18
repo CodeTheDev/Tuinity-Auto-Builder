@@ -1,5 +1,5 @@
 # Tuinity-1.16-Auto-Builder
-A script for building Tuinity 1.16 automatically.
+A script for building the latest stable Tuinity 1.16 server automatically.
 
 # Requirements
 - `Git Bash`
