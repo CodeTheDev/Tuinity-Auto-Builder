@@ -1,6 +1,9 @@
 # Tuinity-1.16-Auto-Builder
 A script for building the latest stable Tuinity 1.16 server automatically.
 
+# Current Stable Version
+1.16.1
+
 # Requirements
 - `Git Bash`
 - `JDK 8`
