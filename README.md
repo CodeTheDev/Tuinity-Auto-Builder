@@ -5,8 +5,8 @@ A script for building the latest stable Tuinity server automatically.
 1.16.4
 
 # Requirements
-- `Git Bash`
-- `JDK 8`
+- `Git Bash` (Windows)
+- `JDK 8\11`
 - `Maven`
 
 # How To Use
