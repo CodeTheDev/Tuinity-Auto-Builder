@@ -1,5 +1,5 @@
-# Tuinity-1.16-Auto-Builder
-A script for building the latest stable Tuinity 1.16 server automatically.
+# Tuinity-Auto-Builder
+A script for building the latest stable Tuinity server automatically.
 
 # Current Stable Version
 1.16.4
