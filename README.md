@@ -2,7 +2,7 @@
 A script for building the latest stable Tuinity server automatically.
 
 # Current Stable Version
-1.16.4
+1.16.6
 
 # Requirements
 - `Git Bash` (Windows)
